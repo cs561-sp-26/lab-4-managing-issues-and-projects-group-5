@@ -5,7 +5,7 @@ _You need to update this README file only once, when you have completed the lab.
 ## Team Members
 - Name 1 (GitHub ID 1)
 - Name 2 (GitHub ID 2)
-- Name 3 (GitHub ID 3)
+- Arman Hastings (AHastings)
 - Name 4 (GitHub ID 4)
 - Name 5 (GitHub ID 5)
 
