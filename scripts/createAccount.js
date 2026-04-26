@@ -188,29 +188,45 @@ function resetCreateAccountErrors() {
 }
 
 /*************************************************************************
- * @function resetCreateAccountForm
+ * @function buildNewAccount
  * @desc
- * Resets all Create Account form fields, restores the default profile
- * picture, and clears any validation styling and error messages.
+ * Builds the account object from the current values entered in the
+ * Create Account dialog.
  *************************************************************************/
-function resetCreateAccountForm() {
-    GlobalAcctEmailField.value = "";
-    GlobalAcctPasswordField.value = "";
-    GlobalAcctPasswordRepeatField.value = "";
-    GlobalAcctDisplayNameField.value = "";
-    GlobalAcctProfilePicField.value = "";
-    GlobalAcctProfilePicImage.setAttribute("src", GlobalDefaultProfilePic);
-    GlobalAcctSecurityQuestionField.value = "";
-    GlobalAcctSecurityAnswerField.value = "";
+function buildNewAccount() {
+    return {
+        accountInfo: {
+            email: GlobalAcctEmailField.value,
+            password: GlobalAcctPasswordField.value,
+            securityQuestion: GlobalAcctSecurityQuestionField.value,
+            securityAnswer: GlobalAcctSecurityAnswerField.value
+        },
+        identityInfo: {
+            displayName: GlobalAcctDisplayNameField.value,
+            profilePic: GlobalAcctProfilePicImage.getAttribute("src")
+        },
+        speedgolfInfo: {
+            bio: "",
+            homeCourse: "",
+            firstRound: "",
+            personalBest: { strokes: 0, minutes: 0, seconds: 0, course: "" },
+            clubs: {},
+            clubComments: ""
+        },
+        rounds: [],
+        roundCount: 0
+    };
+}
 
-    GlobalAcctEmailField.classList.remove("highlight-error");
-    GlobalAcctPasswordField.classList.remove("highlight-error");
-    GlobalAcctPasswordRepeatField.classList.remove("highlight-error");
-    GlobalAcctDisplayNameField.classList.remove("highlight-error");
-    GlobalAcctSecurityQuestionField.classList.remove("highlight-error");
-    GlobalAcctSecurityAnswerField.classList.remove("highlight-error");
-
-    resetCreateAccountErrors();
+/*************************************************************************
+ * @function persistNewAccount
+ * @desc
+ * Saves a newly created account object to localStorage using the email
+ * address as the storage key.
+ * @param newAccount: The account object to persist
+ *************************************************************************/
+function persistNewAccount(newAccount) {
+    localStorage.setItem(newAccount.accountInfo.email, JSON.stringify(newAccount));
 }
 
 GlobalCreateAccountForm.addEventListener("submit", function(e) {
@@ -224,7 +240,9 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
                         validationResults.securityAnswerValid;
 
     if (formIsValid) {
-        resetCreateAccountForm();
+        resetCreateAccountErrors();
+        const newAccount = buildNewAccount();
+        persistNewAccount(newAccount);
         return;
     }
 
