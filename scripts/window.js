@@ -43,7 +43,11 @@ function restoreState(state) {
   GlobalHistoryLogging = true;
 }
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
+  // Do not force the Feed view open while the login page is active.
+  if (GlobalLoginPage && !GlobalLoginPage.classList.contains("hidden")) {
+    return;
+  }
   GlobalModeTabButtons[0].click();
 });
 
