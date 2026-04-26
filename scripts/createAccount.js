@@ -250,6 +250,7 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
 });
 
 GlobalCancelCreateAccountBtn.addEventListener("click", function() {
+    resetCreateAccountForm();
     GlobalCreateAccountDialog.classList.add("hidden");
     GlobalLoginPage.classList.remove("hidden");
     document.title = "Log in to SpeedScore";
