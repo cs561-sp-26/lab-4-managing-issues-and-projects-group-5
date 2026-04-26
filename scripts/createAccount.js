@@ -229,6 +229,10 @@ function persistNewAccount(newAccount) {
     localStorage.setItem(newAccount.accountInfo.email, JSON.stringify(newAccount));
 }
 
+GlobalAccountCreatedClose.addEventListener("click", function() {
+    GlobalAccountCreated.classList.add("hidden");
+});
+
 GlobalCreateAccountForm.addEventListener("submit", function(e) {
     e.preventDefault();
     const validationResults = validateCreateAccountForm();
@@ -243,6 +247,8 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
         resetCreateAccountErrors();
         const newAccount = buildNewAccount();
         persistNewAccount(newAccount);
+        GlobalAccountCreatedEmail.textContent = newAccount.accountInfo.email;
+        GlobalAccountCreated.classList.remove("hidden");
         return;
     }
 
