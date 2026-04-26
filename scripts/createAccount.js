@@ -229,9 +229,17 @@ function persistNewAccount(newAccount) {
     localStorage.setItem(newAccount.accountInfo.email, JSON.stringify(newAccount));
 }
 
-GlobalAccountCreatedClose.addEventListener("click", function() {
-    GlobalAccountCreated.classList.add("hidden");
-});
+/*************************************************************************
+ * @function returnToLoginPage
+ * @desc
+ * Closes the Create Account dialog and returns the user to the login page.
+ *************************************************************************/
+function returnToLoginPage() {
+    GlobalCreateAccountDialog.classList.add("hidden");
+    GlobalLoginPage.classList.remove("hidden");
+    document.title = "Log in to SpeedScore";
+    GlobalCreateAccountBtn.focus();
+}
 
 GlobalCreateAccountForm.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -247,8 +255,7 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
         resetCreateAccountErrors();
         const newAccount = buildNewAccount();
         persistNewAccount(newAccount);
-        GlobalAccountCreatedEmail.textContent = newAccount.accountInfo.email;
-        GlobalAccountCreated.classList.remove("hidden");
+        returnToLoginPage();
         return;
     }
 
@@ -257,8 +264,5 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
 
 GlobalCancelCreateAccountBtn.addEventListener("click", function() {
     resetCreateAccountForm();
-    GlobalCreateAccountDialog.classList.add("hidden");
-    GlobalLoginPage.classList.remove("hidden");
-    document.title = "Log in to SpeedScore";
-    GlobalCreateAccountBtn.focus();
+    returnToLoginPage();
 });
