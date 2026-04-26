@@ -112,17 +112,22 @@ const GlobalPasswordField = document.getElementById("password");
 const GlobalEmailError = document.getElementById("emailError");
 const GlobalPasswordError = document.getElementById("passwordError");
 const GlobalAuthError = document.getElementById("authError");
+const GlobalCreateAccountBtn = document.getElementById("createAccountBtn");
+const GlobalResetPasswordBtn = document.getElementById("resetPasswordBtn");
 
 /*****************************************************/
 /* CREATE ACCOUNT DIALOG FORM                        */
 /*****************************************************/
 const GlobalCreateAccountDialog = document.getElementById("createAccountDialog");
 const GlobalCreateAccountForm = document.getElementById("createAccountForm");
+const GlobalCancelCreateAccountBtn = document.getElementById("cancelCreateAccountBtn");
 const GlobalAcctErrBox = document.getElementById("acctErrorBox");
 const GlobalAcctEmailField = document.getElementById("acctEmail");
 const GlobalAcctPasswordField = document.getElementById("acctPassword");
 const GlobalAcctPasswordRepeatField = document.getElementById("acctPasswordRepeat");
 const GlobalAcctDisplayNameField = document.getElementById("acctDisplayName");
+const GlobalAcctProfilePicField = document.getElementById("acctProfilePic");
+const GlobalAcctProfilePicImage = document.getElementById("acctProfilePicImage");
 const GlobalAcctSecurityQuestionField = document.getElementById("acctSecurityQuestion");
 const GlobalAcctSecurityAnswerField = document.getElementById("acctSecurityAnswer");
 const GlobalAcctEmailErr = document.getElementById("acctEmailError");
@@ -131,3 +136,4 @@ const GlobalAcctPasswordRepeatErr = document.getElementById("acctPasswordRepeatE
 const GlobalAcctDisplayNameErr = document.getElementById("acctDisplayNameError");
 const GlobalAcctSecurityQuestionErr = document.getElementById("acctSecurityQuestionError");
 const GlobalAcctSecurityAnswerErr = document.getElementById("acctSecurityAnswerError");
+const GlobalDefaultProfilePic = "images/DefaultProfilePic.jpg";

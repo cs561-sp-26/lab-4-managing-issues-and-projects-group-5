@@ -5,6 +5,37 @@
  *************************************************************************/
 
 /*************************************************************************
+ * @function createAccountBtn CLICK Handler
+ * @desc
+ * When the user clicks the "Create Account" button on the log in page,
+ * transition to the "Create Account" dialog and focus the first field.
+ *************************************************************************/
+GlobalCreateAccountBtn.addEventListener("click", function() {
+    GlobalLoginPage.classList.add("hidden");
+    GlobalCreateAccountDialog.classList.remove("hidden");
+    document.title = "Create Account";
+    GlobalAcctEmailField.focus();
+});
+
+/*************************************************************************
+ * @function acctProfilePicField CHANGE Handler
+ * @desc
+ * When the user selects a profile picture file, preview it in the dialog.
+ * If the selection is cleared, restore the default profile picture.
+ *************************************************************************/
+GlobalAcctProfilePicField.addEventListener("change", function() {
+    if (GlobalAcctProfilePicField.value.length !== 0) {
+        const reader = new FileReader();
+        reader.readAsDataURL(GlobalAcctProfilePicField.files[0]);
+        reader.addEventListener("load", function() {
+            GlobalAcctProfilePicImage.setAttribute("src", this.result);
+        });
+    } else {
+        GlobalAcctProfilePicImage.setAttribute("src", GlobalDefaultProfilePic);
+    }
+});
+
+/*************************************************************************
  * @function createAccountEmailIsValid
  * @desc
  * Returns true if the create-account email field contains a valid email.
@@ -191,4 +222,11 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
     }
 
     showCreateAccountErrors(validationResults);
+});
+
+GlobalCancelCreateAccountBtn.addEventListener("click", function() {
+    GlobalCreateAccountDialog.classList.add("hidden");
+    GlobalLoginPage.classList.remove("hidden");
+    document.title = "Log in to SpeedScore";
+    GlobalCreateAccountBtn.focus();
 });
