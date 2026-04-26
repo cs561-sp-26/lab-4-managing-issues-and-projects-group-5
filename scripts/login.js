@@ -142,6 +142,18 @@ function showLoginErrors(emailValid, passwordValid, authenticated) {
 }
 
 /*************************************************************************
+ * @function focusFieldFromErrorLink
+ * @desc
+ * Moves keyboard focus from an error link to the associated form field.
+ * @param e: The event triggered from activating the error link
+ * @param field: The form field that should receive focus
+ *************************************************************************/
+function focusFieldFromErrorLink(e, field) {
+    e.preventDefault();
+    field.focus();
+}
+
+/*************************************************************************
  * @function Login Form SUBMIT Handler
  * @desc
  * Prevents submission when the email or password fields are invalid and
@@ -187,4 +199,16 @@ GlobalPasswordField.addEventListener("input", function() {
         GlobalErrorBox.classList.add("hidden");
         document.title = "Log in to SpeedScore";
     }
+});
+
+GlobalEmailError.addEventListener("click", function(e) {
+    focusFieldFromErrorLink(e, GlobalEmailField);
+});
+
+GlobalPasswordError.addEventListener("click", function(e) {
+    focusFieldFromErrorLink(e, GlobalPasswordField);
+});
+
+GlobalAuthError.addEventListener("click", function(e) {
+    focusFieldFromErrorLink(e, GlobalEmailField);
 });
