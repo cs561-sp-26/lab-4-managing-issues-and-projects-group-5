@@ -112,3 +112,22 @@ const GlobalPasswordField = document.getElementById("password");
 const GlobalEmailError = document.getElementById("emailError");
 const GlobalPasswordError = document.getElementById("passwordError");
 const GlobalAuthError = document.getElementById("authError");
+
+/*****************************************************/
+/* CREATE ACCOUNT DIALOG FORM                        */
+/*****************************************************/
+const GlobalCreateAccountDialog = document.getElementById("createAccountDialog");
+const GlobalCreateAccountForm = document.getElementById("createAccountForm");
+const GlobalAcctErrBox = document.getElementById("acctErrorBox");
+const GlobalAcctEmailField = document.getElementById("acctEmail");
+const GlobalAcctPasswordField = document.getElementById("acctPassword");
+const GlobalAcctPasswordRepeatField = document.getElementById("acctPasswordRepeat");
+const GlobalAcctDisplayNameField = document.getElementById("acctDisplayName");
+const GlobalAcctSecurityQuestionField = document.getElementById("acctSecurityQuestion");
+const GlobalAcctSecurityAnswerField = document.getElementById("acctSecurityAnswer");
+const GlobalAcctEmailErr = document.getElementById("acctEmailError");
+const GlobalAcctPasswordErr = document.getElementById("acctPasswordError");
+const GlobalAcctPasswordRepeatErr = document.getElementById("acctPasswordRepeatError");
+const GlobalAcctDisplayNameErr = document.getElementById("acctDisplayNameError");
+const GlobalAcctSecurityQuestionErr = document.getElementById("acctSecurityQuestionError");
+const GlobalAcctSecurityAnswerErr = document.getElementById("acctSecurityAnswerError");
