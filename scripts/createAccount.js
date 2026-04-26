@@ -187,6 +187,32 @@ function resetCreateAccountErrors() {
     GlobalAcctSecurityAnswerErr.classList.add("hidden");
 }
 
+/*************************************************************************
+ * @function resetCreateAccountForm
+ * @desc
+ * Resets all Create Account form fields, restores the default profile
+ * picture, and clears any validation styling and error messages.
+ *************************************************************************/
+function resetCreateAccountForm() {
+    GlobalAcctEmailField.value = "";
+    GlobalAcctPasswordField.value = "";
+    GlobalAcctPasswordRepeatField.value = "";
+    GlobalAcctDisplayNameField.value = "";
+    GlobalAcctProfilePicField.value = "";
+    GlobalAcctProfilePicImage.setAttribute("src", GlobalDefaultProfilePic);
+    GlobalAcctSecurityQuestionField.value = "";
+    GlobalAcctSecurityAnswerField.value = "";
+
+    GlobalAcctEmailField.classList.remove("highlight-error");
+    GlobalAcctPasswordField.classList.remove("highlight-error");
+    GlobalAcctPasswordRepeatField.classList.remove("highlight-error");
+    GlobalAcctDisplayNameField.classList.remove("highlight-error");
+    GlobalAcctSecurityQuestionField.classList.remove("highlight-error");
+    GlobalAcctSecurityAnswerField.classList.remove("highlight-error");
+
+    resetCreateAccountErrors();
+}
+
 GlobalCreateAccountForm.addEventListener("submit", function(e) {
     e.preventDefault();
     const validationResults = validateCreateAccountForm();
@@ -198,7 +224,7 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
                         validationResults.securityAnswerValid;
 
     if (formIsValid) {
-        resetCreateAccountErrors();
+        resetCreateAccountForm();
         return;
     }
 
@@ -206,6 +232,7 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
 });
 
 GlobalCancelCreateAccountBtn.addEventListener("click", function() {
+    resetCreateAccountForm();
     GlobalCreateAccountDialog.classList.add("hidden");
     GlobalLoginPage.classList.remove("hidden");
     document.title = "Log in to SpeedScore";
