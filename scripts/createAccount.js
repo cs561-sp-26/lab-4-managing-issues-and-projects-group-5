@@ -1,8 +1,20 @@
 /*************************************************************************
  * File: createAccount.js
- * This file contains validation functions that support the
- * "Create Account" dialog.
+ * This file contains functions that support the "Create Account" dialog.
  *************************************************************************/
+
+/*************************************************************************
+ * @function createAccountBtn CLICK Handler
+ * @desc
+ * When the user clicks the "Create Account" button on the log in page,
+ * transition to the "Create Account" dialog and focus the first field.
+ *************************************************************************/
+GlobalCreateAccountBtn.addEventListener("click", function() {
+    GlobalLoginPage.classList.add("hidden");
+    GlobalCreateAccountDialog.classList.remove("hidden");
+    document.title = "Create Account";
+    GlobalAcctEmailField.focus();
+});
 
 /*************************************************************************
  * @function createAccountEmailIsValid
@@ -191,4 +203,11 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
     }
 
     showCreateAccountErrors(validationResults);
+});
+
+GlobalCancelCreateAccountBtn.addEventListener("click", function() {
+    GlobalCreateAccountDialog.classList.add("hidden");
+    GlobalLoginPage.classList.remove("hidden");
+    document.title = "Log in to SpeedScore";
+    GlobalCreateAccountBtn.focus();
 });

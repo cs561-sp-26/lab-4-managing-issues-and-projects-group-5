@@ -112,12 +112,15 @@ const GlobalPasswordField = document.getElementById("password");
 const GlobalEmailError = document.getElementById("emailError");
 const GlobalPasswordError = document.getElementById("passwordError");
 const GlobalAuthError = document.getElementById("authError");
+const GlobalCreateAccountBtn = document.getElementById("createAccountBtn");
+const GlobalResetPasswordBtn = document.getElementById("resetPasswordBtn");
 
 /*****************************************************/
 /* CREATE ACCOUNT DIALOG FORM                        */
 /*****************************************************/
 const GlobalCreateAccountDialog = document.getElementById("createAccountDialog");
 const GlobalCreateAccountForm = document.getElementById("createAccountForm");
+const GlobalCancelCreateAccountBtn = document.getElementById("cancelCreateAccountBtn");
 const GlobalAcctErrBox = document.getElementById("acctErrorBox");
 const GlobalAcctEmailField = document.getElementById("acctEmail");
 const GlobalAcctPasswordField = document.getElementById("acctPassword");
