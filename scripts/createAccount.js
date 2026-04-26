@@ -187,6 +187,48 @@ function resetCreateAccountErrors() {
     GlobalAcctSecurityAnswerErr.classList.add("hidden");
 }
 
+/*************************************************************************
+ * @function buildNewAccount
+ * @desc
+ * Builds the account object from the current values entered in the
+ * Create Account dialog.
+ *************************************************************************/
+function buildNewAccount() {
+    return {
+        accountInfo: {
+            email: GlobalAcctEmailField.value,
+            password: GlobalAcctPasswordField.value,
+            securityQuestion: GlobalAcctSecurityQuestionField.value,
+            securityAnswer: GlobalAcctSecurityAnswerField.value
+        },
+        identityInfo: {
+            displayName: GlobalAcctDisplayNameField.value,
+            profilePic: GlobalAcctProfilePicImage.getAttribute("src")
+        },
+        speedgolfInfo: {
+            bio: "",
+            homeCourse: "",
+            firstRound: "",
+            personalBest: { strokes: 0, minutes: 0, seconds: 0, course: "" },
+            clubs: {},
+            clubComments: ""
+        },
+        rounds: [],
+        roundCount: 0
+    };
+}
+
+/*************************************************************************
+ * @function persistNewAccount
+ * @desc
+ * Saves a newly created account object to localStorage using the email
+ * address as the storage key.
+ * @param newAccount: The account object to persist
+ *************************************************************************/
+function persistNewAccount(newAccount) {
+    localStorage.setItem(newAccount.accountInfo.email, JSON.stringify(newAccount));
+}
+
 GlobalCreateAccountForm.addEventListener("submit", function(e) {
     e.preventDefault();
     const validationResults = validateCreateAccountForm();
@@ -199,6 +241,8 @@ GlobalCreateAccountForm.addEventListener("submit", function(e) {
 
     if (formIsValid) {
         resetCreateAccountErrors();
+        const newAccount = buildNewAccount();
+        persistNewAccount(newAccount);
         return;
     }
 
