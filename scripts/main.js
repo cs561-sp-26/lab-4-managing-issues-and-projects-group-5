@@ -100,5 +100,9 @@ const GlobalModeTabsContainer = document.getElementById("modeTabs");
 /*****************************************************/
 const GlobalLoginPage = document.getElementById("loginPage");
 const GlobalLoginForm = document.getElementById("loginForm");
+const GlobalErrorBox = document.getElementById("errorBox");
 const GlobalEmailField = document.getElementById("email");
 const GlobalPasswordField = document.getElementById("password");
+const GlobalEmailError = document.getElementById("emailError");
+const GlobalPasswordError = document.getElementById("passwordError");
+const GlobalAuthError = document.getElementById("authError");
