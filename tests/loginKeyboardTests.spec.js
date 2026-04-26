@@ -24,3 +24,5 @@ test.describe("login keyboard tests",() => {
     await expect(page.locator('#email')).toBeFocused(); //Email field should be focused
   });
 });
+
+
