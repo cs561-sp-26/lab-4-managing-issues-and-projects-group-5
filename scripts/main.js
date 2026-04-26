@@ -114,6 +114,9 @@ const GlobalPasswordError = document.getElementById("passwordError");
 const GlobalAuthError = document.getElementById("authError");
 const GlobalCreateAccountBtn = document.getElementById("createAccountBtn");
 const GlobalResetPasswordBtn = document.getElementById("resetPasswordBtn");
+const GlobalAccountCreated = document.getElementById("accountCreated");
+const GlobalAccountCreatedClose = document.getElementById("accountCreatedClose");
+const GlobalAccountCreatedEmail = document.getElementById("accountCreatedEmail");
 
 /*****************************************************/
 /* CREATE ACCOUNT DIALOG FORM                        */
