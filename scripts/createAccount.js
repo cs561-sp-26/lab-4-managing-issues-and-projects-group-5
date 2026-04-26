@@ -1,7 +1,6 @@
 /*************************************************************************
  * File: createAccount.js
- * This file contains validation functions that support the
- * "Create Account" dialog.
+ * This file contains functions that support the "Create Account" dialog.
  *************************************************************************/
 
 /*************************************************************************
@@ -15,24 +14,6 @@ GlobalCreateAccountBtn.addEventListener("click", function() {
     GlobalCreateAccountDialog.classList.remove("hidden");
     document.title = "Create Account";
     GlobalAcctEmailField.focus();
-});
-
-/*************************************************************************
- * @function acctProfilePicField CHANGE Handler
- * @desc
- * When the user selects a profile picture file, preview it in the dialog.
- * If the selection is cleared, restore the default profile picture.
- *************************************************************************/
-GlobalAcctProfilePicField.addEventListener("change", function() {
-    if (GlobalAcctProfilePicField.value.length !== 0) {
-        const reader = new FileReader();
-        reader.readAsDataURL(GlobalAcctProfilePicField.files[0]);
-        reader.addEventListener("load", function() {
-            GlobalAcctProfilePicImage.setAttribute("src", this.result);
-        });
-    } else {
-        GlobalAcctProfilePicImage.setAttribute("src", GlobalDefaultProfilePic);
-    }
 });
 
 /*************************************************************************
