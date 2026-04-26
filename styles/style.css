@@ -34,7 +34,7 @@
   }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .disabled {
@@ -213,7 +213,7 @@
 * CSS CLASSES FOR MODE PAGES
 *************************************************************************/
 .mode-page {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .mode-page-header {
@@ -273,4 +273,25 @@
 change cursor to pointer */
 .float-btn:hover {
 cursor: pointer;
+}
+
+/*************************************************************************
+* CSS CLASSES FOR FORMS
+*************************************************************************/
+
+.fm-primary-btn {
+    width: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 36px;
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+.centered {
+    text-align: center;
+}
+
+.highlight-error {
+    background-color: #ffdddd;
 }
