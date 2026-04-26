@@ -116,6 +116,41 @@ function resetLoginErrors() {
 }
 
 /*************************************************************************
+ * @function resetLoginForm
+ * @desc
+ * Restores the login form to its default state after a successful login.
+ *************************************************************************/
+function resetLoginForm() {
+    resetLoginErrors();
+    GlobalEmailField.value = "";
+    GlobalPasswordField.value = "";
+    GlobalEmailField.classList.remove("highlight-error");
+    GlobalPasswordField.classList.remove("highlight-error");
+}
+
+/*************************************************************************
+ * @function login
+ * @desc
+ * Transitions the app from the login page to the default signed-in state.
+ * The login page is hidden, the main app shell is revealed, and keyboard
+ * focus is placed on the skip link.
+ * @param userId: Email address of the authenticated user
+ *************************************************************************/
+function login(userId) {
+    resetLoginForm();
+    GlobalUserData = getStoredAccount(userId);
+    GlobalLoginPage.classList.add("hidden");
+    GlobalModeTabsContainer.classList.remove("hidden");
+    GlobalModeTabPanels[GlobalCurrentMode.get()].classList.remove("hidden");
+    GlobalMenuBtn.classList.remove("hidden");
+    GlobalSearchBtn.classList.remove("hidden");
+    GlobalProfileBtn.classList.remove("hidden");
+    GlobalMenu.classList.remove("hidden");
+    document.title = "SpeedScore: Activity Feed";
+    GlobalSkipLink.focus();
+}
+
+/*************************************************************************
  * @function showLoginErrors
  * @desc
  * Displays the accessible error state for the current login attempt,
@@ -160,7 +195,7 @@ GlobalLoginForm.addEventListener("submit", function(e) {
     updateLoginFieldValidationState(GlobalPasswordField, passwordValid);
 
     if (authenticated) {
-        resetLoginErrors();
+        login(GlobalEmailField.value);
         return;
     }
 
