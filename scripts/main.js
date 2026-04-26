@@ -94,3 +94,11 @@ const GlobalSearchBtn = document.getElementById("searchBtn");
 const GlobalProfileBtn = document.getElementById("profileBtn");
 const GlobalSkipLink = document.getElementById("sLink");
 const GlobalModeTabsContainer = document.getElementById("modeTabs");
+
+/*****************************************************/
+/* LOGIN PAGE AND FORM                               */
+/*****************************************************/
+const GlobalLoginPage = document.getElementById("loginPage");
+const GlobalLoginForm = document.getElementById("loginForm");
+const GlobalEmailField = document.getElementById("email");
+const GlobalPasswordField = document.getElementById("password");

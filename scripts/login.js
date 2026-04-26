@@ -35,3 +35,73 @@ function validAccount(email, password) {
     }
     return account.accountInfo.password === password;
 }
+
+/*************************************************************************
+ * @function emailFieldIsValid
+ * @desc
+ * Returns true if the log in email field contains a valid email value.
+ *************************************************************************/
+function emailFieldIsValid() {
+    return !GlobalEmailField.validity.typeMismatch &&
+           !GlobalEmailField.validity.valueMissing;
+}
+
+/*************************************************************************
+ * @function passwordFieldIsValid
+ * @desc
+ * Returns true if the log in password field satisfies the required
+ * password pattern and is not blank.
+ *************************************************************************/
+function passwordFieldIsValid() {
+    return !GlobalPasswordField.validity.patternMismatch &&
+           !GlobalPasswordField.validity.valueMissing;
+}
+
+/*************************************************************************
+ * @function updateLoginFieldValidationState
+ * @desc
+ * Adds or removes the error highlight on a log in field based on whether
+ * the current value is valid.
+ * @param field: Reference to the input field being styled
+ * @param isValid: Boolean indicating whether the field is currently valid
+ *************************************************************************/
+function updateLoginFieldValidationState(field, isValid) {
+    if (isValid) {
+        field.classList.remove("highlight-error");
+    } else {
+        field.classList.add("highlight-error");
+    }
+}
+
+/*************************************************************************
+ * @function validateLoginForm
+ * @desc
+ * Validates the email and password fields on the log in form. Returns
+ * true only when both fields are valid.
+ *************************************************************************/
+function validateLoginForm() {
+    const emailValid = emailFieldIsValid();
+    const passwordValid = passwordFieldIsValid();
+    updateLoginFieldValidationState(GlobalEmailField, emailValid);
+    updateLoginFieldValidationState(GlobalPasswordField, passwordValid);
+    return emailValid && passwordValid;
+}
+
+/*************************************************************************
+ * @function Login Form SUBMIT Handler
+ * @desc
+ * Prevents submission when the email or password fields are invalid and
+ * highlights invalid fields so the user can correct them.
+ *************************************************************************/
+GlobalLoginForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    validateLoginForm();
+});
+
+GlobalEmailField.addEventListener("input", function() {
+    updateLoginFieldValidationState(GlobalEmailField, emailFieldIsValid());
+});
+
+GlobalPasswordField.addEventListener("input", function() {
+    updateLoginFieldValidationState(GlobalPasswordField, passwordFieldIsValid());
+});
