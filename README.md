@@ -58,4 +58,4 @@ Write one paragraph rationale here.
 
 
 ## Read.ai Planning Poker Meeting Report Link
-[Project link](url)
+[Project link](https://docs.zoom.us/doc/vhK8fQczSHS_LhgwrYuaZA?from=hub)
