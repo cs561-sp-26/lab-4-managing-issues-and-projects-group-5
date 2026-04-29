@@ -54,32 +54,30 @@ The major reason we choose GitHub Projects over Jira is because it connects with
 
 | # | Title | Feature Branch | Assigned To | Story Points | Date Started | Date Completed |
 |---|-------|----------------|-------------|--------------|--------------|----------------|
-|[#14](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/14)|Create a new account|`feature/create-a-new-account`||5|4/26/2026|4/26/2026|
-|[#15](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/15)|Add the Create Account entry point on the login page|`feature/add-create-account-entry-point`||1|4/26/2026|4/26/2026|
-|[#16](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/16)|Build the Create Account dialog UI in index.html|`feature/create-account-dialog-ui`||1|4/26/2026|4/26/2026|
-|[#17](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/17)|Add styles for the dialog, form fields, buttons, and toast notification|`feature/dialog-styles-form-buttons-toast`||1|4/26/2026|4/26/2026|
-|[#18](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/18)|Implement validation for email, password, repeated password, display name, security question, and security answer|`feature/form-validation`||1|4/26/2026|4/26/2026|
-|[#19](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/19)|Implement optional profile picture upload and preview behavior|`feature/profile-picture-upload-preview`||1|4/26/2026|4/26/2026|
-|[#20](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/20)|Create and persist the new account object in localStorage|`feature/persist-account-localstorage`||1|4/26/2026|4/26/2026|
-|[#21](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/21)|Reset dialog state after success or cancel|`feature/reset-dialog-state`||1|4/26/2026|4/26/2026|
-|[#22](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/22)|Return the user to the login page after account creation|`feature/return-to-login-after-create`||1|4/26/2026|4/26/2026|
-|[#23](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/23)|Display confirmation toast after successful account creation|`feature/confirmation-toast`||1|4/26/2026|4/26/2026|
-|[#25](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/25)|create account dialog keyboardTests|`feature/keyboard-tests`||1|4/26/2026|4/26/2026|
-|[#26](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/26)|create account dialog visual tests|`feature/visual-tests`||1|4/26/2026|4/26/2026|
-|[#41](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/41)|entry point missing bug|`feature/entry-point-missing-bug`||1|4/26/2026|4/26/2026||
-|[#2](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/2)|Login System|`feature/login-system`||1|4/26/2026|4/26/2026|
-|[#4](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/4)|Create the login page UI in index.html|`feature/create-login-page-ui`||1|4/26/2026|4/26/2026|
-|[#5](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/5)|Add styles for the login form and related UI states|`feature/login-form-styles`||1|4/26/2026|4/26/2026|
-|[#6](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/6)|Implement login form validation for email and password|`feature/login-validation`||1|4/26/2026|4/26/2026|
-|[#7](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/7)|Implement accessible error messages and title updates|`feature/accessible-error-messages`||1|4/26/2026|4/26/2026|
-|[#8](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/8)|Implement account lookup and authentication using localStorage|`feature/login-auth-localstorage`||1|4/26/2026|4/26/2026|
-|[#9](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/9)|Add or verify keyboard accessibility behavior for the login flow|`feature/login-keyboard-accessibility`||1|4/26/2026|4/26/2026|
-|[#10](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/10)|Implement login success behavior and app state transition|`feature/login-success-state`||1|4/26/2026|4/26/2026|
-|[#11](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/11)|Add or verify visual and keyboard tests for login|`feature/login-tests`||1|4/26/2026|4/26/2026|
-|[#12](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/12)|Login Keyboard Test|`feature/login-keyboard-test`||1|4/26/2026|4/26/2026|
-|[#34](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/34)|Activity Feed now hidden for login page bug|`feature/login-activity-feed-bug`||1|4/26/2026|4/26/2026|
-
-
+|[#14](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/14)|Create a new account|`feature/create-a-new-account`|Hao Jun Chen|5|4/26/2026|4/26/2026|
+|[#15](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/15)|Add the Create Account entry point on the login page|`feature/add-create-account-entry-point`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#16](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/16)|Build the Create Account dialog UI in index.html|`feature/create-account-dialog-ui`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#17](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/17)|Add styles for the dialog, form fields, buttons, and toast notification|`feature/dialog-styles-form-buttons-toast`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#18](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/18)|Implement validation for email, password, repeated password, display name, security question, and security answer|`feature/form-validation`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#19](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/19)|Implement optional profile picture upload and preview behavior|`feature/profile-picture-upload-preview`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#20](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/20)|Create and persist the new account object in localStorage|`feature/persist-account-localstorage`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#21](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/21)|Reset dialog state after success or cancel|`feature/reset-dialog-state`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#22](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/22)|Return the user to the login page after account creation|`feature/return-to-login-after-create`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#23](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/23)|Display confirmation toast after successful account creation|`feature/confirmation-toast`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#25](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/25)|create account dialog keyboardTests|`feature/keyboard-tests`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#26](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/26)|create account dialog visual tests|`feature/visual-tests`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#41](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/41)|entry point missing bug|`feature/entry-point-missing-bug`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#2](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/2)|Login System|`feature/login-system`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#4](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/4)|Create the login page UI in index.html|`feature/create-login-page-ui`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#5](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/5)|Add styles for the login form and related UI states|`feature/login-form-styles`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#6](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/6)|Implement login form validation for email and password|`feature/login-validation`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#7](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/7)|Implement accessible error messages and title updates|`feature/accessible-error-messages`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#8](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/8)|Implement account lookup and authentication using localStorage|`feature/login-auth-localstorage`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#9](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/9)|Add or verify keyboard accessibility behavior for the login flow|`feature/login-keyboard-accessibility`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#10](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/10)|Implement login success behavior and app state transition|`feature/login-success-state`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#11](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/11)|Add or verify visual and keyboard tests for login|`feature/login-tests`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#12](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/12)|Login Keyboard Test|`feature/login-keyboard-test`|Hao Jun Chen|1|4/26/2026|4/26/2026|
+|[#34](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/34)|Activity Feed now hidden for login page bug|`feature/login-activity-feed-bug`|Hao Jun Chen|1|4/26/2026|4/26/2026|
 
 
 
