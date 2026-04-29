@@ -22,7 +22,7 @@ _You need to update this README file only once, when you have completed the lab.
 
 ### Pros of GitHub Projects
 - Direct connect to repo, able to create Branch directly on Issues
-- Pro 2
+- Simply layout, easy to understand working context
 - Pro 3
 
 ### Cons of GitHub Projects
