@@ -12,12 +12,12 @@ _You need to update this README file only once, when you have completed the lab.
 ## Jira vs. GitHub Projects
 ### Pros of Jira
 - Built for Agile
-- Pro 2
+- Tons of features such as ai
 - Pro 3
 
 ### Cons of Jira
 - UI is complex and need time to learn
-- Con 2
+- Spaces may be confusing
 - con 3
 
 ### Pros of GitHub Projects
@@ -27,7 +27,7 @@ _You need to update this README file only once, when you have completed the lab.
 
 ### Cons of GitHub Projects
 - Limited Agile Feature
-- Con 2
+- Have to create each project table, board and roadmap seperately
 - Con 3
 
 ## Tool Chosen
@@ -45,7 +45,7 @@ The major reason we choose GitHub Projects over Jira is because it connects with
 | --------- | -----------
 | Hao Jun Chen | 21 
 | Name 2 | 8 
-| Name 3 | 5 
+| Arman Hastings | 5 
 | Name 4 | 3 
 | Name 5 | 2 
 | **Total** | **30** 
