@@ -12,12 +12,12 @@ _You need to update this README file only once, when you have completed the lab.
 ## Jira vs. GitHub Projects
 ### Pros of Jira
 - Built for Agile
-- Pro 2
+- Tons of features such as ai
 - Pro 3
 
 ### Cons of Jira
 - UI is complex and need time to learn
-- Con 2
+- Spaces may be confusing
 - con 3
 
 ### Pros of GitHub Projects
@@ -27,11 +27,12 @@ _You need to update this README file only once, when you have completed the lab.
 
 ### Cons of GitHub Projects
 - Limited Agile Feature
-- Con 2
+- Have to create each project table, board and roadmap seperately
 - Con 3
 
 ## Tool Chosen
 [[Jira or GitHub Projects](https://github.com/orgs/cs561-sp-26/projects/1/views/1)]
+Github
 
 ## Rationale
 The major reason we choose GitHub Projects over Jira is because it connects with the repository very well. Since all our code, branches, commits, and pull requests are already in GitHub, using GitHub Projects allows us to manage tasks in the same place without switching tools. This makes it easier to track progress, link issues directly to code changes, and collaborate as a team. In addition, GitHub Projects is simpler and faster to set up, which fits our workflow better, while Jira can feel more complex and time-consuming for a smaller, code-focused project.
@@ -45,7 +46,7 @@ The major reason we choose GitHub Projects over Jira is because it connects with
 | --------- | -----------
 | Hao Jun Chen | 21 
 | Name 2 | 8 
-| Name 3 | 5 
+| Arman Hastings | 5 
 | Name 4 | 3 
 | Name 5 | 2 
 | **Total** | **30** 
