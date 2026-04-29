@@ -79,11 +79,11 @@ The major reason we choose GitHub Projects over Jira is because it connects with
 |[#11](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/11)|Add or verify visual and keyboard tests for login|`feature/login-tests`|Hao Jun Chen|1|4/26/2026|4/26/2026|
 |[#12](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/12)|Login Keyboard Test|`feature/login-keyboard-test`|Hao Jun Chen|1|4/26/2026|4/26/2026|
 |[#34](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/34)|Activity Feed now hidden for login page bug|`feature/login-activity-feed-bug`|Hao Jun Chen|1|4/26/2026|4/26/2026|
-|[#71](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/71)|Navigate the app with accessible menus|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/29/2026|4/29/2026|
-|[#72](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/72)|Navigate the app with accessible tabs|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/29/2026|4/29/2026|
-|[#73](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/73)|Navigate the app with accessible dialogs|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/29/2026|4/29/2026|
-|[#74](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/74)|Add a sort function to the Round's page|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/29/2026|4/29/2026|
-|[#75](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/75)|Add a search function to the Round's page|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/29/2026|4/29/2026|
+|[#71](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/71)|Navigate the app with accessible menus|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/28/2026|4/28/2026|
+|[#72](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/72)|Navigate the app with accessible tabs|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/28/2026|4/28/2026|
+|[#73](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/73)|Navigate the app with accessible dialogs|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/28/2026|4/28/2026|
+|[#74](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/74)|Add a sort function to the Round's page|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/28/2026|4/28/2026|
+|[#75](https://github.com/cs561-sp-26/lab-4-managing-issues-and-projects-group-5/issues/75)|Add a search function to the Round's page|`Feature/Nav_with_menus_tabs_dialogs_and_sort_search_rounds`|ahastings|1|4/28/2026|4/28/2026|
 
 
 ## Read.ai Planning Poker Meeting Report Link
