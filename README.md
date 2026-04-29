@@ -22,7 +22,7 @@ _You need to update this README file only once, when you have completed the lab.
 
 ### Pros of GitHub Projects
 - Direct connect to repo, able to create Branch directly on Issues
-- Pro 2
+- Simply layout, easy to understand working context
 - Pro 3
 
 ### Cons of GitHub Projects
@@ -32,6 +32,7 @@ _You need to update this README file only once, when you have completed the lab.
 
 ## Tool Chosen
 [[Jira or GitHub Projects](https://github.com/orgs/cs561-sp-26/projects/1/views/1)]
+Github
 
 ## Rationale
 The major reason we choose GitHub Projects over Jira is because it connects with the repository very well. Since all our code, branches, commits, and pull requests are already in GitHub, using GitHub Projects allows us to manage tasks in the same place without switching tools. This makes it easier to track progress, link issues directly to code changes, and collaborate as a team. In addition, GitHub Projects is simpler and faster to set up, which fits our workflow better, while Jira can feel more complex and time-consuming for a smaller, code-focused project.
